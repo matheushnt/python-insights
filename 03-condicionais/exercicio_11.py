@@ -1,7 +1,3 @@
-""" Faça um programa que pergunte o preço de três produtos e informe
-qual produto você deve comprar, sabendo que a decisão é
-sempre pelo mais barato """
-
 produto_1 = float(input('Preço do 1º produto: R$'))
 produto_2 = float(input('Preço do 2º produto: R$'))
 produto_3 = float(input('Preço do 3º produto: R$'))
