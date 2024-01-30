@@ -1,6 +1,3 @@
-""" Faça um Programa que leia o orçamento de 3 empresas
-e mostre o maior deles """
-
 maior = 0
 orcamento_1 = float(input('1º Orçamento: R$'))
 orcamento_2 = float(input('2º Orçamento: R$'))
