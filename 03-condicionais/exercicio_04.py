@@ -1,5 +1,3 @@
-""" Faça um Programa que peça dois números e imprima o maior deles """
-
 maior = 0
 n1 = int(input('Primeiro número: '))
 n2 = int(input('Segundo número: '))
