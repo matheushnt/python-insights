@@ -3,7 +3,10 @@ print('FRUTARIA MATH'.center(30))
 print('=' * 30)
 
 # Total de quilos a ser contabilizados
-kg_total = valor_total = 0
+kg_total = 0
+
+# Valor a ser contabilizado
+valor_total = 0
 
 # Calculando o preço das frutas
 if (kg_morango := float(input('Informe quantos KG de morangos: '))) <= 5:
