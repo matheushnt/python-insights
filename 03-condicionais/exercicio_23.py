@@ -25,16 +25,37 @@ match tipo:
         else:
             preco = 7.8 * quilos
 
+# Preço total até o momento, podendo receber desconto
+preco_total = preco
+
 # Pedindo forma de pagamento para um possível desconto
 pagamento = str(input('Forma de pagamento: '))[0].upper().strip()
-print('-' * 30)
+
+# Verificar a possibilidade de desconto de 5%
+aprov = False
 
 # Cálculo do preço final caso a forma de pagamento seja o cartão da loja
 if pagamento in 'CM':
+    # Desconto aprovado
+    aprov = True
     DESCONTO = 0.05
-    preco_final = preco - (preco * DESCONTO)
+    preco_final = preco_total - (preco_total * DESCONTO)
 else:
-    preco_final = preco
+    preco_final = preco_total
 
 # Resultado
-print(f'Valor a ser pago pelo cliente: R${preco_final:.2f}')
+print('~' * 30)
+print('{:^30}'.format('CUPOM FISCAL'))
+print('-' * 30)
+print(f'Tipo de carne: {tipo}')
+print('-' * 30)
+print(f'Quantidade pedida de {tipo}: {quilos:.2f} KG')
+print('-' * 30)
+print(f'Preço total: R${preco_total:.2f}')
+print('-' * 30)
+if aprov:
+    print('Desconto: 5%')
+else:
+    print('Desconto: NENHUM DESCONTO APLICADO')
+print('-' * 30)
+print(f'Preço final: R${preco_final:.2f}')
