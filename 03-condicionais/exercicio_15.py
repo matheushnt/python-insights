@@ -1,4 +1,4 @@
-num = int(input('Insira um valor entre 1 a 6: '))
+num = int(input('Insira um valor entre 1 a 7: '))
 # Uso da Estrutura Match case
 match num:
     case 1:
