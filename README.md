@@ -27,3 +27,26 @@ Bem-vindo ao meu repositório pessoal de estudos de Python! 🐍 Aqui, compartil
 
 ## Objetivo:
 Este repositório foi criado com intuito de aprimorar minhas habilidades de programação e fortalecer a compreensão da lógica que impulsiona a criação de software. Sinta-se a vontade a explorar e/ou clonar este repositório. Boas codificações!
+
+## Fontes
+Com grande entusiasmo e gratidão, desejo expressar meus sinceros agradecimentos aos diversos sites que foram fonte essencial de pesquisa durante meu aprendizado.
+
+* [Documentação do Python](https://docs.python.org/3/)
+
+* [Terminal Root](https://terminalroot.com.br/)
+
+* [DIO](https://www.dio.me/)
+
+* [Hashtag Treinamentos](https://www.hashtagtreinamentos.com/)
+
+* [Awari](https://awari.com.br/)
+
+* [Python Iluminado](https://pythoniluminado.netlify.app/)
+
+* [Acervo Lima](https://acervolima.com/)
+
+* [W3 Schools](https://www.w3schools.com/)
+
+* [Python Academy](https://pythonacademy.com.br/)
+
+* [ChatGPT](https://chat.openai.com/)
