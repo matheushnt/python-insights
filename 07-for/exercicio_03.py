@@ -1,4 +1,4 @@
-print(' INSIGHTS 2020 '.center(45, '='))
+print(' INSIGHTS 2020 '.center(65, '='))
 produtos = ['iphone', 'galaxy', 'ipad', 'tv',
             'máquina de café', 'kindle', 'geladeira',
             'adega','notebook dell', 'notebook hp',
@@ -25,14 +25,17 @@ for prod, venda2019, venda2020 in zip(produtos, vendas2019, vendas2020):
     if venda2020 > venda2019:
         # Produto e venda adicionados a lista de dados 
         dados.append(prod)
+        dados.append(venda2019)
         dados.append(venda2020)
+        percentual = (venda2020 / venda2019) - 1
+        dados.append(percentual)
         # Lista dados adicionada a lista insights
         insights.append(dados.copy())
         # Limpeza de informações da lista dados para armazenar novos valores
         dados.clear()
 
-print('PRODUTOS MAIS VENDIDOS EM 2020 DO QUE EM 2019')
+print('PRODUTOS MAIS VENDIDOS EM 2020 DO QUE EM 2019'.center(65, '='))
 for dado in insights:
-    print(f'Produto: {dado[0]}')
-    print(f'Quantidade vendida: {dado[1]}')
-    print('-' * 45)
+    print(f'{dado[0]} vendeu R${dado[1]:.2f} em 2019, R${dado[2]:.2f} em 2020')
+    print(f'Percentual de aumento: {dado[3]:.2%}')
+    print('-' * 65)
