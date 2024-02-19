@@ -21,6 +21,6 @@ for i in range(0, 4):
 for info in vendedores:
     print(f'{info[0]} fez R${info[1]:.2f} em vendas')
     print('-' * 30)
-   
+
 media_vendas = s / 4
 print(f'A média de vendas foram R${media_vendas:.2f}')
