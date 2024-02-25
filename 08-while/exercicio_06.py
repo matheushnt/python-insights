@@ -1,8 +1,8 @@
 print('ANÁLISE DE FATURAMENTO SEMESTRAL'.center(45, '='))
 
-maior_fat = menor_fat = media_fat = fat_total = 0
+maior_fat = menor_fat = media_fat = fat_total = c = 0
 
-for c in range(0, 6):
+while c < 6:
     faturamento = float(input(f'{c+1}º Faturamento: '))
     print('- -' * 10)
 
@@ -19,6 +19,8 @@ for c in range(0, 6):
 
     # Calcula a média semestral
     media_fat = fat_total / 6
+
+    c += 1
 
 print('DASHBOARD DO FATURAMENTO SEMESTRAL'.center(45, '-'))
 print(f'Maior faturamento: R${maior_fat:.2f}')
