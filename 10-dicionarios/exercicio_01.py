@@ -40,7 +40,7 @@ niveis_co2 = {
 """
 O nível de CO₂ de um local é dado pela
 média captada por 5 sensores
-Para o exercício, considerei o número 450 como nível de risco 
+Para o exercício, considerei o número 450 como nível de risco
 """
 NIVEL_DE_RISCO_CO2 = 450
 # Loop para iterar sobre o dicionário
