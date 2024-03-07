@@ -65,11 +65,5 @@ video = {
          'public_name': 'SD 360p',
          'size_short': '46.37MB'}]}
 
-videos = video['download']
-# Loop para iterar sobre a lista de dicionários
-for midia in videos:
-    # Loop para iterar sobre cada dicionário na lista
-    for k, v in midia.items():
-        # Caso a condição seja atendida, imprime o link de download do vídeo
-        if k == 'link':
-            print(f'Link do vídeo: {v}')
+for i in range(0, len(video['download'])):
+    print(f'Link de download do vídeo: {video['download'][i]['link']}')
