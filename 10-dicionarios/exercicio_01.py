@@ -38,10 +38,11 @@ niveis_co2 = {
 }
 
 """
-Nível médio de CO₂ em um local (O nível de CO₂ de um local é dado pela
-média captada por 5 sensores)
+O nível de CO₂ de um local é dado pela
+média captada por 5 sensores
+Para o exercício, considerei o número 450 como nível de risco 
 """
-MEDIA_NIVEL_NORMAL_CO2 = 350
+NIVEL_DE_RISCO_CO2 = 450
 # Loop para iterar sobre o dicionário
 for chave, valor in niveis_co2.items():
     niveis_co2_cidade = 0
@@ -49,7 +50,7 @@ for chave, valor in niveis_co2.items():
     for nivel in valor:
         niveis_co2_cidade += nivel
     media_nivel_co2_cidade = niveis_co2_cidade / 5
-    if media_nivel_co2_cidade > MEDIA_NIVEL_NORMAL_CO2:
+    if media_nivel_co2_cidade > NIVEL_DE_RISCO_CO2:
         print(f'{chave} está com níveis altíssimos de CO₂', end=' ')
         print(f'({media_nivel_co2_cidade}), é preciso chamar', end=' ')
         print('a equipe especializada para verificar a região.')
